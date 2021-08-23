@@ -129,7 +129,8 @@ type TransactionRequest struct {
 	TransactionSource   TransactionSource           `xml:"transaction-source,omitempty"`
 	LineItems           TransactionLineItemRequests `xml:"line-items,omitempty"`
 	DiscountAmount 		*Decimal                	`xml:"discount-amount,omitempty"`
-
+	ShippingAmount 		*Decimal                	`xml:"shipping-amount,omitempty"`
+	ShipsFromPostalCode string                 		`xml:"ships-from-postal-code,omitempty"`
 }
 
 type TransactionRefundRequest struct {
