@@ -39,6 +39,8 @@ type TransactionLineItemRequest struct {
 	ProductCode    string                  `xml:"product-code,omitempty"`
 	CommodityCode  string                  `xml:"commodity-code,omitempty"`
 	URL            string                  `xml:"url,omitempty"`
+	ShippingAmount *Decimal                `xml:"shipping-amount"`
+
 }
 
 type TransactionLineItems []*TransactionLineItem

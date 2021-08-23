@@ -128,6 +128,8 @@ type TransactionRequest struct {
 	PurchaseOrderNumber string                      `xml:"purchase-order-number,omitempty"`
 	TransactionSource   TransactionSource           `xml:"transaction-source,omitempty"`
 	LineItems           TransactionLineItemRequests `xml:"line-items,omitempty"`
+	DiscountAmount 		*Decimal                	`xml:"discount-amount,omitempty"`
+
 }
 
 type TransactionRefundRequest struct {

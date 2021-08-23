@@ -1,3 +1,1 @@
-module github.com/JustunoCom/braintree-go
-
-
+module github.com/braintree-go/braintree-go
